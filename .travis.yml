@@ -6,4 +6,4 @@ before_install:
   - docker build -t pratik151/docker-react-app -f Dockerfile.dev .
 
 script:
-  - docker run pratik151/docker-react-app npm run test --coverage
+  - docker run pratik151/docker-react-app npm run test -- --coverage
