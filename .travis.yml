@@ -5,8 +5,6 @@ services:
 before_install:
   - docker build -t pratik151/docker-react-app .
 
-script:
-  - docker run -e CI=true pratik151/docker-react-app npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
